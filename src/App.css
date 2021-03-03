@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap");
+
+
+
+.tic-tac-toe {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 450px;
+  height: 450px;
+  margin: 100px auto;
+}
+.tic-tac-toe > div {
+  box-sizing: border-box;
+  width: 150px;
+  height: 150px;
+  background-color: #fee140;
+  background-color: #FF3CAC;
+  background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+  border: 2px solid rgb(151, 179, 235);
+  text-align: center;
+  padding-top: 10%;
+  cursor: pointer;
+}
+
+.xpoint {
+  font-family: "Indie Flower", cursive;
+  color: #fff;
+  font-size: 80px;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  animation-name: point;
+  animation-duration: 350ms;
+}
+.opoint {
+  font-family: "Indie Flower", cursive;
+  color: rgb(8, 6, 6);
+  font-size: 80px;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  animation-name: point;
+  animation-duration: 350ms;
+}
+
+@keyframes point {
+  0% {
+    top: -40px;
+  }
+  25% {
+    top: 0;
+  }
+  50% {
+    top: -20px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.btn-grad {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+}
+.btn-grad {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: black;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.btnMusic {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.btnPlay {
+  background: url("./source/pause.png") no-repeat;
+  background-size: 50px 50px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  /* background-color: blue; */
+  cursor: pointer;
+  border: none;
+}
+
+.btnPause {
+  background: url("./source/play.png") no-repeat;
+  background-size: 50px 50px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  /* background-color: blue; */
+  cursor: pointer;
+  border: none;
+}
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+}
+
+.img {
+  position: absolute;
+  left: 60px;
+  bottom: -2px;
+  width: 60px;
+  height: 60px;
+}
+.link {
+  text-decoration: none;
+  position: relative;
+  padding-left: 120px;
+  font-family: "Hachi Maru Pop", cursive;
+  font-weight: bold;
+  font-size: 40px;
+  color: #1c8fb3;
+}
+.logo {
+  position: absolute;
+  right: 50px;
+  bottom: 3px;
+  width: 60px;
+  height: 60px;
+}
+.youtube {
+  position: absolute;
+  right: 120px;
+  bottom: 6px;
+  width: 50px;
+  height: 50px;
+}
+.full {
+  background: url("./source/icons.png") no-repeat;
+  background-size: 50px 50px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: 110px;
+  left: 98px;
+  cursor: pointer;
+  border: none;
+}
